@@ -6,7 +6,7 @@
   --bold-font: 600;
   --bolder-font: 900;
   --primary-color: #0652dd;
-  --secondary-color: #ea2027;
+  --secondary-color: #eac820;
   --line-height: 1.7rem;
   --transition: 0.4s ease-in;
 }
@@ -272,7 +272,7 @@ iframe {
 /* About section start*/
 .about {
   position: relative;
-  background: url("../images/jab-transformed.png") no-repeat top center/cover;
+  background: url("../images/mq3.webp") no-repeat top center/cover;
   height: 600px;
   display: flex;
   align-items: center;
@@ -302,6 +302,10 @@ iframe {
 /* About section ends */
 
 /* Image gallery starts */
+.stars h2{
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
 .stars-gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -523,4 +527,75 @@ footer {
   .stand-2 {
     left: 195px;
   }
+}
+
+
+
+
+/* -----Pricing CSS-----*/
+
+
+.pricing-sec {
+  padding: 128px 16px;
+  min-height: 250px;
+}
+
+.pricing-sec h2{
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  isolation: isolate;
+}
+
+@media (max-width: 540px) {
+  .pricing {
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex: 1;
+  max-width: 300px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 2px 16px hsl(260deg 50% 20% / 0.7);
+  
+  
+    position: relative;
+  z-index: 1;
+}
+
+.primary.card {
+  flex: 1.25;
+  max-width: 350px;
+  
+  
+  z-index: 2;
+  margin: -32px -16px;
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0deg 0% 40%);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card button {
+  width: 100%;
+  height: 3rem;
 }
